@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<script src="index.js" defer></script>
+<body>
+
+    <div class="container">
+        
+        <div class="heading">
+            <h2> Password Generator</h2>
+        </div>
+        
+        <div class="wrapper">
+
+            <div class="input">
+                <input type="text" class="input-password" id="input-password-id">
+            </div>
+
+            <div class="password-strength-status">
+                <div class="color-bar" id="color-bar-id"></div>
+            </div>
+
+            <div id="password-text-strength">
+
+            </div>
+
+            <div class="password-strength">
+
+            </div>
+
+            <div class="password-length">
+                <h4 class="password-length-heading">
+                    <span>Password Length</span>
+                    <span class="number" id="slider-number">14</span>
+                </h4>
+                <input type="range" name="length-slider" id="length-slider"
+                min="8" max="19" step="1"> 
+            </div>
+
+            <div class="password-settings">
+                <h4>Password Settings</h4>
+                <ul class="option-items">
+                    <li class="options">
+                        <input type="checkbox" name="lowercase-select" id="lowercase-select">
+                        <span>Lowercase (a-z)</span>
+                    </li>
+                    <li class="options">
+                        <input type="checkbox" name="uppercase-select" id="uppercase-select">
+                        <span>Uppercase (A-Z)</span>
+                    </li>
+                    <li class="options">
+                        <input type="checkbox" name="numbers-select" id="numbers-select">
+                        <span>Numbers (0-9)</span>
+                    </li>
+                    <li class="options">
+                        <input type="checkbox" name="symbols-select" id="symbols-select">
+                        <span>Symbols (!-$^+)</span>
+                    </li>
+                    <li class="options">
+                        <input type="checkbox" name="exclude-duplicates-select" id="exclude-duplicates-select">
+                        <span>Exclude Duplicates</span>
+                    </li>
+                    <li class="options">
+                        <input type="checkbox" name="include-spaces-select" id="include-spaces-select">
+                        <span>Include Spaces</span>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="generate-password" id="generate-password-id">
+                Generate Password
+            </button>
+
+        </div>
+
+       
+
+    </div>
+    
+</body>
+</html>

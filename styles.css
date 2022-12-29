@@ -1,0 +1,139 @@
+/* import poppins font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&display=swap');
+
+/* Declare all variables here */
+
+:root{
+    --background : #4B8FEF;
+    --button-primary: #427ED3;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--background);
+    font-family: poppins;
+    display: flex;
+    border : 1px solid black;
+    height: 98vh;
+    align-items: center;
+    justify-content: center;
+}
+
+input, select, textarea, button{font-family:inherit;}
+
+h2,h3,h4 { 
+    margin: 0px;
+}
+
+.container {
+    width: 410px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.heading {
+    padding: 0.5em 1.5em;
+}
+
+.wrapper {
+    padding: 1em 1.5em;
+    border-top : 1px solid #EAEAEA;
+}
+
+.input {
+    margin-bottom: 0.8em;
+}
+
+.input-password {
+    font-size: medium;
+    padding: 0.2em;;
+    width: 100%;
+    outline: none;
+    border: 1px solid #B8B8B8;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    border-radius: 0.2rem;
+
+}
+
+.input-password:focus {
+    border: 2px solid black;
+}
+
+.password-strength-status {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #EAEAEA;
+    margin-bottom: 1.2em;
+    border-radius: 2rem;
+    visibility: hidden;
+
+}
+
+.password-strength-status .color-bar{
+    width: 60%;
+    height: 100%;
+    background-color: yellowgreen;
+    border-radius: 2rem;
+    margin: 0px;
+}
+
+#password-text-strength{
+    text-align: end;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.password-length-heading {
+    color: #303030;
+    margin: 0.8rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-length-heading .number {
+    color: #505050;
+}
+
+.password-settings {
+    margin-top: 0.8rem;
+     color: #303030;
+}
+
+#length-slider {
+    width: 100%;
+}
+
+.option-items{
+    list-style-type: none;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.options {
+    width: 50%;
+    height: 2.5rem;
+    font-size: 0.9rem;
+}
+
+.generate-password {
+    width: 100%;
+    background-color: var(--button-primary);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    color: white;
+}
